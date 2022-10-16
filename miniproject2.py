@@ -22,12 +22,19 @@ get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
 pd.Series([1,-1]).plot(title="한글")
 
 
+# In[483]:
+
+
+np.random.default_rng(42)
+sample_no = np.random.choice(df['가입자 일련번호'].unique(), 1000)
+
+
 # In[9]:
 
 
 from glob import glob
 
-file_name = glob("data/성*")[0]
+file_name = glob("성*")[0]
 file_name
 
 
@@ -111,12 +118,18 @@ pd.options.display.max_columns = None
 전국인구df
 
 
-# In[68]:
+# In[498]:
 
 
-sample_file = glob("Data/sample*.cvs")[0]
+sample_file = glob("sampl*.csv")[0]
 df = pd.read_csv(sample_file)
 df.head()
+
+
+# In[ ]:
+
+
+
 
 
 # In[481]:
