@@ -8,7 +8,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.express as px
 
 
 # In[2]:
@@ -211,7 +210,7 @@ sns.barplot(data=연령별처방df, x="연령대", y="처방비율", ci=None)
 # In[328]:
 
 
-px.histogram(연령별처방df, x="연령대", y="처방비율")
+# px.histogram(연령별처방df, x="연령대", y="처방비율")
 
 
 # In[244]:
@@ -369,13 +368,13 @@ sns.barplot(data=전국나이성별df, x="연령대", y="인구", hue="성별", 
 # In[337]:
 
 
-px.bar(전국나이성별df, x="연령대", y="처방비율", facet_col="성별")
+# px.bar(전국나이성별df, x="연령대", y="처방비율", facet_col="성별")
 
 
 # In[339]:
 
 
-px.bar(전국나이성별df, x="연령대", y="처방비율", color="성별" , barmode="group")
+# px.bar(전국나이성별df, x="연령대", y="처방비율", color="성별" , barmode="group")
 
 
 # In[336]:
@@ -496,19 +495,19 @@ sns.barplot(data=금액나이성별df, x="연령대", hue="성별", y="총금액
 # In[345]:
 
 
-px.histogram(금액나이성별df, x="연령대", y="총금액")
+# px.histogram(금액나이성별df, x="연령대", y="총금액")
 
 
 # In[348]:
 
 
-px.histogram(금액나이성별df, x="연령대", y="총금액",color="성별", barmode="group")
+# px.histogram(금액나이성별df, x="연령대", y="총금액",color="성별", barmode="group")
 
 
 # In[347]:
 
 
-px.histogram(금액나이성별df, x="연령대", y="총금액비율",color="성별", barmode="group")
+# px.histogram(금액나이성별df, x="연령대", y="총금액비율",color="성별", barmode="group")
 
 
 # In[306]:
