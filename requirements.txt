@@ -6,6 +6,3 @@ plotly
 seaborn
 matplotlib
 koreanize_matplotlib
-folium
-requests
-json
